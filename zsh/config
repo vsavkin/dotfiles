@@ -5,11 +5,11 @@ unsetopt correct_all
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source  "$HOME/.rvm/scripts/rvm"
 
 # speed up testing!
-export RUBY_HEAP_MIN_SLOTS=1000000
-export RUBY_HEAP_SLOTS_INCREMENT=1000000
+export RUBY_HEAP_MIN_SLOTS=500000
+export RUBY_HEAP_SLOTS_INCREMENT=500000
 export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
-export RUBY_GC_MALLOC_LIMIT=1000000000
-export RUBY_HEAP_FREE_MIN=500000
+export RUBY_GC_MALLOC_LIMIT=500000000
+export RUBY_HEAP_FREE_MIN=200000
 
 #Add --no-ff to all merges
 git() {
@@ -31,3 +31,11 @@ git() {
   fi
 }
 
+
+# DEV REVIEW
+# Outputs a github link that you can click on to see the diff
+devreview() {
+  if [[ -n $1 ]]; then
+    git log --pretty=oneline | egrep "Merge branch '${1}.*' into dev" | awk '{print "https://github.com/nulogy/packmanager/commit/" $1}'
+  fi
+}
