@@ -7,3 +7,6 @@ alias gci="git ci -am"
 alias gco="git co"
 alias gmerge="git merge"
 alias gmergenoff="git merge --no-ff"
+
+# Ruby
+alias rake="bundle exec rake"

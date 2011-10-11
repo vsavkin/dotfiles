@@ -39,3 +39,9 @@ devreview() {
     git log --pretty=oneline | egrep "Merge branch '${1}.*' into dev" | awk '{print "https://github.com/nulogy/packmanager/commit/" $1}'
   fi
 }
+
+devreviewrelease() {
+  if [[ -n $1 ]]; then
+    git log --pretty=oneline | egrep "Merge branch '${1}.*' into release" | awk '{print "https://github.com/nulogy/packmanager/commit/" $1}'
+  fi
+}
