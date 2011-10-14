@@ -8,5 +8,17 @@ alias gco="git co"
 alias gmerge="git merge"
 alias gmergenoff="git merge --no-ff"
 
-# Ruby
-alias rake="bundle exec rake"
+
+# Bundle exec 
+be() {
+  if [[ -a Gemfile ]]; then
+    bundle exec $*
+  else
+    command $*
+  fi
+}
+
+
+alias rake='be rake'
+alias ruby='be ruby'
+alias spork='be spork'
