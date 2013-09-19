@@ -22,4 +22,3 @@ be() {
 #alias rake='be rake'
 #alias ruby='be ruby'
 alias spork='be spork'
-alias sublime="'/Applications/Sublime Text 2.app/Contents/MacOS/Sublime Text 2'"
