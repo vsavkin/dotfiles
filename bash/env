@@ -1,7 +1,4 @@
-export VERTX_HOME=/Users/savkin/tools/vertx
 export DART_SDK=/Users/savkin/tools/dart/dart-sdk
 export JDK_HOME=/Library/Java/JavaVirtualMachines/1.6.0_37-b06-434.jdk/Contents/Home
 export PATH=./node_modules/.bin:$JDK_HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:$VERTX_HOME/bin:$DART_SDK/bin:~/bin
 export DARTIUM_BIN=/Users/savkin/tools/dart/chromium/Chromium.app/Contents/MacOS/Chromium
-
-export JRUBY_OPTS=--1.9

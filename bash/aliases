@@ -1,0 +1,10 @@
+# Common
+alias la="ls -la"
+
+# Git
+alias g="git status"
+alias gci="git commit -am"
+alias gco="git checkout"
+alias gcob="git checkout -b"
+
+alias sublime="'/Applications/Sublime Text 2.app/Contents/MacOS/Sublime Text 2'"
